@@ -1,23 +1,23 @@
 import { useSettingsStore } from '../store/useSettingsStore';
 
 export const darkColors = {
-  background: '#0D0D0D',
-  surface: '#141414',
-  primaryText: '#F5F5F5',
-  secondaryText: '#A0A0A0',
-  accent: '#C8A96A',
-  divider: '#1F1F1F',
-  inputBackground: '#1A1A1A',
-  placeholder: '#6B6B6B',
-};
-
-export const lightColors = {
-  background: '#FAFAFA',
+  background: '#FAF9F6', // Off-white
   surface: '#FFFFFF',
   primaryText: '#121212',
   secondaryText: '#5E5E5E',
-  accent: '#C8A96A', // Manter dourado
-  divider: '#E0E0E0',
+  accent: '#C8A96A',
+  divider: '#EBEBEB',
+  inputBackground: '#F0F0F0',
+  placeholder: '#9E9E9E',
+};
+
+export const lightColors = {
+  background: '#FAF9F6', // Off-white
+  surface: '#FFFFFF',
+  primaryText: '#121212',
+  secondaryText: '#5E5E5E',
+  accent: '#C8A96A',
+  divider: '#EBEBEB',
   inputBackground: '#F0F0F0',
   placeholder: '#9E9E9E',
 };
