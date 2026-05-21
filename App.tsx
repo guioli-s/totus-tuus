@@ -1,20 +1,46 @@
+import React, { useMemo } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, ActivityIndicator, StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { AppNavigator } from './src/navigation/AppNavigator';
+import { useDatabase } from './src/hooks/useDatabase';
+import { useAppTheme } from './src/theme';
 
-export default function App() {
+function AppContent() {
+  const { isReady } = useDatabase();
+  const { colors, isDark } = useAppTheme();
+  const styles = useMemo(() => getStyles(colors), [colors]);
+
+  if (!isReady) {
+    return (
+      <View style={styles.loading}>
+        <StatusBar style="light" />
+        <ActivityIndicator size="large" color={colors.accent} />
+      </View>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style={isDark ? 'light' : 'dark'} />
+      <AppNavigator />
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <AppContent />
+    </SafeAreaProvider>
+  );
+}
+
+const getStyles = (colors: any) => StyleSheet.create({
+  loading: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: colors.background,
     justifyContent: 'center',
+    alignItems: 'center',
   },
 });

@@ -1,0 +1,746 @@
+{
+  "metadata": {
+    "title": "Catecismo da Igreja Católica",
+    "version": "definitiva-v5",
+    "modules": [
+      "hierarchy",
+      "breadcrumbs",
+      "study_engine",
+      "flashcards",
+      "rag",
+      "semantic_search",
+      "cross_links"
+    ]
+  },
+  "entries": [
+    {
+      "id": "ccc_0001",
+      "slug": "ccc_0001",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 1,
+      "content": "{\"source_file\": \"prologo 1-25_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/prologo 1-25_po.html\", \"structure\": [{\"text\": \"PRÓLOGO\"}, {\"text\": \"«PAI, [...] é esta a vida eterna: que Te conheçam a Ti, único Deus verdadeiro, e Aquele que enviaste, Jesus Cristo» (Jo 17, 3). «Deus, nosso Salvador [...], quer que todos os homens se salvem e cheguem ao conhecimento da verdade» (1 Tm 2, 3-4). «Não existe debaixo do céu outro nome, dado aos homens, pelo qual possamos ser salvos» (Act 4, 12), senão o nome de JESUS.\"}, {\"text\": \"I. A vida do homem – conhecer e amar a Deus\"}, {\"paragraph_number\": 1, \"content\": \"Deus, infinitamente perfeito e bem-aventurado em Si mesmo, num desígnio de pura bondade, criou livremente o homem para o tornar participante da sua vida bem-aventurada. Por isso, sempre e em toda a parte, Ele está próximo do homem. Chama-o e ajuda-o a procurá-Lo, a conhecê-Lo e a amá-Lo com todas as suas forças. Convoca todos os homens, dispersos pelo pecado, para a unidade da sua família que é a Igreja. Para tal, enviou o seu Filho como Redentor e Salvador na plenitude dos tempos. N'Ele e por Ele, chama os homens a tornarem-se, no Espírito Santo, seus filhos adoptivos e, portanto, herdeiros da sua vida bem-aventurada.\"}, {\"paragraph_number\": 2, \"content\": \"Para que este convite se fizesse ouvir por toda a Terra, Cristo enviou os Apóstolos que escolhera, dando-lhes o mandato de anunciar o Evangelho: «Ide, pois, fazei discípulos de todas as nações, bapti",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 1",
+        "back": "{\"source_file\": \"prologo 1-25_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/prologo 1-25_po.html\", \"structure\": [{\"text\": \"PRÓLOGO\"}, {\"text\": \"«PAI, [...] é esta a vida eterna: que Te conheçam"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0001",
+        "ccc_0002"
+      ]
+    },
+    {
+      "id": "ccc_0002",
+      "slug": "ccc_0002",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 2,
+      "content": "{\"source_file\": \"p1s1c1_26-49_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c1_26-49_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"«EU CREIO» – «NÓS CREMOS»\"}, {\"paragraph_number\": 26, \"content\": \"Quando professamos a nossa fé, começamos por dizer: «Creio», ou «Cremos». Portanto, antes de expor a fé da Igreja, tal como é confessada no Credo, celebrada na liturgia, vivida na prática dos mandamentos e na oração, perguntemos a nós mesmos o que significa «crer». A fé é a resposta do homem a Deus, que a ele Se revela e Se oferece, resposta que, ao mesmo tempo, traz uma luz superabundante ao homem que busca o sentido último da sua vida. Comecemos, pois, por considerar esta busca do homem (capítulo primeiro): depois, a Revelação divina pela qual Deus vem ao encontro do homem (capítulo segundo); finalmente, a resposta da fé (capítulo terceiro).\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"O HOMEM É «CAPAZ» DE DEUS\"}, {\"text\": \"I. O desejo de Deus\"}, {\"paragraph_number\": 27, \"content\": \"O desejo de Deus é um sentimento inscrito no coração do homem, porque o homem foi criado por Deus e para Deus. Deus não cessa de atrair o homem para Si e só em Deus é que o homem encontra a verdade e a felicidade que procura sem descanso:\"}, {\"text\": \"«A razão mais sublime da dignidade humana consiste n",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 2",
+        "back": "{\"source_file\": \"p1s1c1_26-49_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c1_26-49_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO D"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0001",
+        "ccc_0003"
+      ]
+    },
+    {
+      "id": "ccc_0003",
+      "slug": "ccc_0003",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 3,
+      "content": "{\"source_file\": \"p1s1c2_50-141_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c2_50-141_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"«EU CREIO» – «NÓS CREMOS»\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"DEUS AO ENCONTRO DO HOMEM\"}, {\"paragraph_number\": 50, \"content\": \"Pela razão natural, o homem pode conhecer Deus com certeza, a partir das suas obras. Mas existe outra ordem de conhecimento, que o homem de modo nenhum pode atingir por suas próprias forças: a da Revelação divina (1). Por uma vontade absolutamente livre, Deus revela-Se e dá-Se ao homem. E fá-lo revelando o seu mistério, o desígnio benevolente que, desde toda a eternidade, estabeleceu em Cristo, em favor de todos os homens. Revela plenamente o seu desígnio, enviando o seu Filho bem-amado, nosso Senhor Jesus Cristo, e o Espírito Santo.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"A REVELAÇÃO DE DEUS\"}, {\"text\": \"I. Deus revela o seu «desígnio benevolente»\"}, {\"paragraph_number\": 51, \"content\": \"«Aprouve a Deus, na sua sabedoria e bondade, revelar-Se a Si mesmo e dar a conhecer o mistério da sua vontade, segundo o qual os homens, por meio de Cristo, Verbo encarnado, têm acesso ao Pai no Espírito Santo e se tomam participantes da natureza divina»(2).\"}, {\"paragraph_number\": 52, \"content\": \"Deu",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 3",
+        "back": "{\"source_file\": \"p1s1c2_50-141_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c2_50-141_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0002",
+        "ccc_0004"
+      ]
+    },
+    {
+      "id": "ccc_0004",
+      "slug": "ccc_0004",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 4,
+      "content": "{\"source_file\": \"p1s1c3_142-184_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c3_142-184_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"«EU CREIO» – «NÓS CREMOS»\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO TERCEIRO\", \"children\": [{\"text\": \"A RESPOSTA DO HOMEM A DEUS\"}, {\"paragraph_number\": 142, \"content\": \"Pela sua revelação, «Deus invisível, na riqueza do seu amor, fala aos homens como amigos e convive com eles, para os convidar e admitir à comunhão com Ele» (1). A resposta adequada a este convite é a fé.\"}, {\"paragraph_number\": 143, \"content\": \"Pela fé, o homem submete completamente a Deus a inteligência e a vontade; com todo o seu ser, o homem dá assentimento a Deus revelador (2). A Sagrada Escritura chama «obediência da fé» a esta resposta do homem a Deus revelador (3).\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"EU CREIO\"}, {\"text\": \"I. A «obediência da fé»\"}, {\"paragraph_number\": 144, \"content\": \"Obedecer (ob-audire) na fé é submeter-se livremente à palavra escutada, por a sua verdade ser garantida por Deus, que é a própria verdade. Desta obediência, o modelo que a Sagrada Escritura nos propõe é Abraão. A sua realização mais perfeita é a da Virgem Maria.\"}, {\"text\": \"ABRAÃO – «O PAI DE TODOS OS CRENTES»\"}, {\"paragraph_number\": 145, \"content\": \"A Epístola aos Hebreus, no grande el",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 4",
+        "back": "{\"source_file\": \"p1s1c3_142-184_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s1c3_142-184_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISS"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0003",
+        "ccc_0005"
+      ]
+    },
+    {
+      "id": "ccc_0005",
+      "slug": "ccc_0005",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 5,
+      "content": "{\"source_file\": \"p1s2_185-197_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2_185-197_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ CRISTÃ\"}, {\"text\": \"OS SÍMBOLOS DA FÉ\"}, {\"paragraph_number\": 185, \"content\": \"Quem diz «Creio» afirma: «dou a minha adesão àquilo em que nós cremos». A comunhão na fé tem necessidade duma linguagem comum da fé, normativa para todos e a todos unindo na mesma confissão de fé.\"}, {\"paragraph_number\": 186, \"content\": \"Desde a origem, a Igreja apostólica exprimiu e transmitiu a sua própria fé em fórmulas breves e normativas para todos (1). Mas bem cedo a Igreja quis também recolher o essencial da sua fé em resumos orgânicos e articulados, destinados sobretudo aos candidatos ao Baptismo.\"}, {\"text\": \"«Esta síntese da fé não foi feita segundo as opiniões humanas: mas recolheu-se de toda a Escritura o que nela há de mais importante, para apresentar na integra aquilo e só aquilo que a fé ensina. E, tal como a semente de mostarda contém, num pequeno grão, numerosos ramos, do mesmo modo este resumo da fé encerra em algumas palavras todo o conhecimento da verdadeira piedade contido no Antigo e no Novo Testamento» (2).\"}, {\"paragraph_number\": 187, \"content\": \"A estas sínteses da fé chamamos-lhes «profissões de fé», porque resumem a fé professada pelos cristãos. Chamamos-lhes ",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 5",
+        "back": "{\"source_file\": \"p1s2_185-197_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2_185-197_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO D"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0004",
+        "ccc_0006"
+      ]
+    },
+    {
+      "id": "ccc_0006",
+      "slug": "ccc_0006",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 6,
+      "content": "{\"source_file\": \"p1s2c1_198-421_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2c1_198-421_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"CREIO EM DEUS PAI\"}, {\"paragraph_number\": 198, \"content\": \"A nossa profissão de fé começa por Deus, porque Deus é «o Primeiro e o Último» (Is 44, 6), o Princípio e o Fim de tudo. O Credo começa por Deus Pai, porque o Pai é a Primeira Pessoa divina da Santíssima Trindade; o nosso Símbolo começa pela criação do céu e da terra, porque a criação é o princípio e o fundamento de todas as obras de Deus.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"«CREIO EM DEUS PAI TODO-PODEROSO CRIADOR DO CÉU E DA TERRA»\"}, {\"text\": \"PARÁGRAFO 1\"}, {\"text\": \"CREIO EM DEUS\"}, {\"paragraph_number\": 199, \"content\": \"«Creio em Deus»: é esta a primeira afirmação da profissão de fé e também a mais fundamental. Todo o Símbolo fala de Deus; ao falar também do homem e do mundo, fá-lo em relação a Deus. Os artigos do Credo dependem todos do primeiro, do mesmo modo que todos os mandamentos são uma explicitação do primeiro. Os outros artigos fazem-nos conhecer melhor a Deus, tal como Ele progressivamente Se revelou aos homens. «Os fiéis professam, antes de mais nada, crer em Deus»(1).\"},",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 6",
+        "back": "{\"source_file\": \"p1s2c1_198-421_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2c1_198-421_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISS"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0005",
+        "ccc_0007"
+      ]
+    },
+    {
+      "id": "ccc_0007",
+      "slug": "ccc_0007",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 7,
+      "content": "{\"source_file\": \"p1s2cap2_422-682_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2cap2_422-682_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"CREIO EM JESUS CRISTO, FILHO ÚNICO DE DEUS\"}, {\"text\": \"A BOA-NOVA: DEUS ENVIOU O SEU FILHO\"}, {\"paragraph_number\": 422, \"content\": \"«Quando chegou a plenitude dos tempos, Deus enviou o seu Filho, nascido de uma mulher e sujeito à Lei, para resgatar os que estavam sujeitos à Lei e nos tornar seus filhos adoptivos» (Gl 4, 4-5). Esta é a «Boa-Nova de Jesus Cristo, Filho de Deus»(1): Deus visitou o seu povo(2) e cumpriu as promessas feitas a Abraão e à sua descendência (3) fê-lo para além de toda a expectativa: enviou o seu «Filho muito-amado» (4).\"}, {\"paragraph_number\": 423, \"content\": \"Nós cremos e confessamos que Jesus de Nazaré, judeu nascido duma filha de Israel, em Belém, no tempo do rei Herodes o Grande e do imperador César Augusto, carpinteiro de profissão, morto crucificado em Jerusalém sob o procurador Pôncio Pilatos no reinado do imperador Tibério, é o Filho eterno de Deus feito homem; que Ele «saiu de Deus» (Jo 13, 3), «desceu do céu» (Jo 3, 13; 6, 33) e «veio na carne» (5), porque «o Verbo fez-Se carne e habitou entre nós. Nós vimos a sua glória, glória que Lhe v",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 7",
+        "back": "{\"source_file\": \"p1s2cap2_422-682_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2cap2_422-682_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PRO"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0006",
+        "ccc_0008"
+      ]
+    },
+    {
+      "id": "ccc_0008",
+      "slug": "ccc_0008",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 8,
+      "content": "{\"source_file\": \"p1s2cap3_683-1065_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2cap3_683-1065_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"A PROFISSÃO DA FÉ CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO TERCEIRO\", \"children\": [{\"text\": \"CREIO NO ESPÍRITO SANTO\"}, {\"paragraph_number\": 683, \"content\": \"«Ninguém pode dizer \\\"Jesus é o Senhor\\\" a não ser pela acção do Espírito Santo» (1Cor 12, 3). «Deus enviou aos nossos corações o Espírito do seu Filho, que clama: \\\"Abbá! Pai!'» (Gl 4, 6). Este conhecimento da fé só é possível no Espírito Santo. Para estar em contacto com Cristo, é preciso primeiro ter sido tocado pelo Espírito Santo. É Ele que nos precede e suscita em nós a fé. Em virtude do nosso Baptismo, primeiro sacramento da fé, a Vida, que tem a sua fonte no Pai e nos é oferecida no Filho, é-nos comunicada, íntima e pessoalmente, pelo Espírito Santo na Igreja:\"}, {\"text\": \"O Baptismo «dá-nos a graça do novo nascimento em Deus Pai, por meio do Filho no Espírito Santo. Porque aqueles que têm o Espírito de Deus são conduzidos ao Verbo, isto é, ao Filho: mas o Filho apresenta-os ao Pai, e o Pai dá-lhes a incorruptibilidade. Portanto, sem o Espírito não é possível ver o Filho de Deus, e sem o Filho ninguém tem acesso ao Pai, porque o conhecimento do Pai é o Filho, e o conhecimento do Filho de Deus faz-se",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 8",
+        "back": "{\"source_file\": \"p1s2cap3_683-1065_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p1s2cap3_683-1065_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"PRIMEIRA PARTE\", \"children\": [{\"text\": \"A P"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0007",
+        "ccc_0009"
+      ]
+    },
+    {
+      "id": "ccc_0009",
+      "slug": "ccc_0009",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 9,
+      "content": "{\"source_file\": \"p2s1cap1_1066-1075_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap1_1066-1075_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}, {\"text\": \"INTRODUÇÃO\"}, {\"text\": \"PORQUÊ A LITURGIA?\"}, {\"paragraph_number\": 1066, \"content\": \"No Símbolo da Fé, a Igreja confessa o mistério da Santíssima Trindade e o seu «desígnio admirável» (Ef 1, 9) sobre toda a criação: o Pai realiza o «mistério da sua vontade», dando o seu Filho muito amado e o seu Espírito Santo para a salvação do mundo e para a glória do seu nome. Tal é o mistério de Cristo (1), revelado e realizado na história segundo um plano, uma «disposição» sabiamente ordenada, a que São Paulo chama «a economia do mistério» (Ef 3, 9) e a que a tradição patrística chamará «a economia do Verbo encarnado» ou «economia da salvação».\"}, {\"paragraph_number\": 1067, \"content\": \"«Esta obra da redenção humana e da glorificação perfeita de Deus, cujo prelúdio foram as magníficas obras divinas operadas no povo do Antigo Testamento, realizou-a Cristo Senhor, principalmente pelo mistério pascal da sua bem-aventurada paixão, Ressurreição dos mortos e gloriosa ascensão, em que, \\\"morrendo, destruiu a morte e ressuscitando restaurou a vida\\\". Efectivamente, foi do lado de Cristo adormecido na cruz que nasceu \\\"o sacramento admirável de toda a Igreja\\\"» (2). É por isso que, na liturgia, a Igreja celebra principalmente o mistério p",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 9",
+        "back": "{\"source_file\": \"p2s1cap1_1066-1075_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap1_1066-1075_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0008",
+        "ccc_0010"
+      ]
+    },
+    {
+      "id": "ccc_0010",
+      "slug": "ccc_0010",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 10,
+      "content": "{\"source_file\": \"p2s1cap1_1076-1134_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap1_1076-1134_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A «ECONOMIA» SACRAMENTAL\"}, {\"paragraph_number\": 1076, \"content\": \"No dia do Pentecostes, pela efusão do Espírito Santo, a Igreja foi manifestada ao mundo(1). O dom do Espírito inaugura um tempo novo na «dispensação do mistério»: o tempo da Igreja, durante o qual Cristo manifesta, torna presente e comunica a sua obra de salvação pela liturgia da sua Igreja, «até que Ele venha» (1 Cor 11, 26). Durante este tempo da Igreja, Cristo vive e age, agora na sua Igreja e com ela, de um modo novo, próprio deste tempo novo. Age pelos sacramentos e é a isso que a Tradição comum do Oriente e do Ocidente chama «economia sacramental». Esta consiste na comunicação (ou «dispensação») dos frutos do mistério pascal de Cristo na celebração da liturgia «sacramental» da Igreja.\"}, {\"text\": \"É por isso que importa, antes de mais, pôr em relevo esta «dispensação sacramental» (Capítulo primeiro). Assim, aparecerão mais claramente a natureza e os aspectos essenciais da celebração litúrgica (Capítulo segundo).\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"O MISTÉRIO PASCAL NO TEMPO DA IGREJA\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 10",
+        "back": "{\"source_file\": \"p2s1cap1_1076-1134_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap1_1076-1134_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0009",
+        "ccc_0011"
+      ]
+    },
+    {
+      "id": "ccc_0011",
+      "slug": "ccc_0011",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 11,
+      "content": "{\"source_file\": \"p2s1cap2_1135-1209_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap2_1135-1209_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A «ECONOMIA» SACRAMENTAL\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"A CELEBRAÇÃO SACRAMENTAL DO MISTÉRIO PASCAL\"}, {\"paragraph_number\": 1135, \"content\": \"A catequese da liturgia implica, primeiramente, a compreensão da economia sacramental (capítulo primeiro). A esta luz revela-se a novidade da sua celebração. Tratar-se-á, pois, neste capítulo da celebração dos sacramentos da Igreja. Ter-se-á em vista aquilo que, através da diversidade das tradições litúrgicas, é comum à celebração dos sete sacramentos; o que é próprio de cada um será apresentado mais adiante. Esta catequese fundamental das celebrações sacramentais responderá às principais questões que os fiéis se colocam a este respeito:\"}, {\"text\": \"– quem celebra?– como celebrar?– quando celebrar?– onde celebrar?\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"CELEBRAR A LITURGIA DA IGREJA\"}, {\"text\": \"I. Quem celebra?\"}, {\"paragraph_number\": 1136, \"content\": \"A liturgia é «acção» do «Cristo total» (Christus totus). Os que agora a celebram para além dos sinais, estão já integrados na liturgia celeste, onde a celebração é totalmente comunhão e festa",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 11",
+        "back": "{\"source_file\": \"p2s1cap2_1135-1209_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s1cap2_1135-1209_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0010",
+        "ccc_0012"
+      ]
+    },
+    {
+      "id": "ccc_0012",
+      "slug": "ccc_0012",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 12,
+      "content": "{\"source_file\": \"p2s2cap1_1210-1419_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap1_1210-1419_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS SETE SACRAMENTOS DA IGREJA\"}, {\"paragraph_number\": 1210, \"content\": \"Os sacramentos da nova Lei foram instituídos por Cristo e são em número de sete, a saber: o Baptismo, a Confirmação, a Eucaristia, a Penitência, a Unção dos Enfermos, a Ordem e o Matrimónio. Os sete sacramentos tocam todas as etapas e momentos importantes da vida do cristão: outorgam nascimento e crescimento, cura e missão à vida de fé dos cristãos. Há aqui uma certa semelhança entre as etapas da vida natural e as da vida espiritual (1).\"}, {\"paragraph_number\": 1211, \"content\": \"Seguindo esta analogia, exporemos primeiro os três sacramentos da iniciação cristã (capítulo primeiro), depois os sacramentos de cura (capítulo segundo) e finalmente os que estão ao serviço da comunhão e da missão dos fiéis (capítulo terceiro). Esta ordem não é, certamente, a única possível, mas permite ver que os sacramentos formam um organismo, no qual cada sacramento particular tem o seu lugar vital. Neste organismo, a Eucaristia ocupa um lugar único, como «sacramento dos sacramentos»: «todos os outros sacramentos estão ordenados para este, como para o seu fim» (2).\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTUL",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 12",
+        "back": "{\"source_file\": \"p2s2cap1_1210-1419_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap1_1210-1419_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0011",
+        "ccc_0013"
+      ]
+    },
+    {
+      "id": "ccc_0013",
+      "slug": "ccc_0013",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 13,
+      "content": "{\"source_file\": \"p2s2cap1_1420-1532_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap1_1420-1532_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS SETE SACRAMENTOS DA IGREJA\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"OS SACRAMENTOS DE CURA\"}, {\"paragraph_number\": 1420, \"content\": \"Pelos sacramentos da iniciação cristã, o homem recebe a vida nova de Cristo. Ora, esta vida, nós trazemo-la «em vasos de barro». Por enquanto, ela está ainda «oculta com Cristo em Deus» (Cl 3, 3). Vivemos ainda na «nossa morada terrena» (1), sujeita ao sofrimento à doença e à morte. A vida nova de filhos de Deus pode ser enfraquecida e até perdida pelo pecado.\"}, {\"paragraph_number\": 1421, \"content\": \"O Senhor Jesus Cristo, médico das nossas almas e dos nossos corpos, que perdoou os pecados ao paralítico e lhe restituiu a saúde do corpo (2) quis que a sua Igreja continuasse, com a força do Espírito Santo, a sua obra de cura e de salvação, mesmo para com os seus próprios membros. É esta a finalidade dos dois sacramentos de cura: o sacramente da Penitência e o da Unção dos enfermos.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 4\", \"children\": [{\"text\": \"O SACRAMENTO DA PENITÊNCIA E DA RECONCILIAÇÃO\"}, {\"paragraph_number\": 1422, \"content\": \"«Aqueles que se aproximam do sacramento da Penitência",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 13",
+        "back": "{\"source_file\": \"p2s2cap1_1420-1532_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap1_1420-1532_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0012",
+        "ccc_0014"
+      ]
+    },
+    {
+      "id": "ccc_0014",
+      "slug": "ccc_0014",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 14,
+      "content": "{\"source_file\": \"p2s2cap3_1533-1666_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap3_1533-1666_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS SETE SACRAMENTOS DA IGREJA\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO TERCEIRO\", \"children\": [{\"text\": \"OS SACRAMENTOS AO SERVIÇO DA COMUNHÃO\"}, {\"paragraph_number\": 1533, \"content\": \"O Baptismo, a Confirmação e a Eucaristia são os sacramentos da iniciação cristã. São o fundamento da vocação comum de todos os discípulos de Cristo – vocação à santidade e à missão de evangelizar o mundo. E conferem as graças necessárias para a vida segundo o Espírito, nesta existência de peregrinos em marcha para a Pátria.\"}, {\"paragraph_number\": 1534, \"content\": \"Dois outros sacramentos, a Ordem e o Matrimónio, são ordenados para a salvação de outrem. Se contribuem também para a salvação pessoal, é através do serviço aos outros que o fazem. Conferem uma missão particular na Igreja, e servem a edificação do povo de Deus.\"}, {\"paragraph_number\": 1535, \"content\": \"Nestes sacramentos, aqueles que já foram consagrados pelo Baptismo e pela Confirmação (1) para o sacerdócio comum de todos os fiéis, podem receber consagrações particulares. Os que recebem o sacramento da Ordem são consagrados para serem, em nome de Cristo, «com a palavra e a graça de Deus, os pastores da igreja»",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 14",
+        "back": "{\"source_file\": \"p2s2cap3_1533-1666_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap3_1533-1666_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0013",
+        "ccc_0015"
+      ]
+    },
+    {
+      "id": "ccc_0015",
+      "slug": "ccc_0015",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 15,
+      "content": "{\"source_file\": \"p2s2cap4_1667-1690_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap4_1667-1690_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A CELEBRAÇÃO DO MISTÉRIO CRISTÃO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS SETE SACRAMENTOS DA IGREJA\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO QUARTO\", \"children\": [{\"text\": \"AS OUTRAS CELEBRAÇÕES LITÚRGICAS\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"OS SACRAMENTAIS\"}, {\"paragraph_number\": 1667, \"content\": \"«A Santa Mãe Igreja instituiu também os sacramentais. Estes são sinais sagrados por meio dos quais, imitando de algum modo os sacramentos, se significam e se obtêm, pela oração da Igreja, efeitos principalmente de ordem espiritual. Por meio deles, dispõem-se os homens para a recepção do principal efeito dos sacramentos e são santificadas as várias circunstâncias da vida» (1).\"}, {\"text\": \"TRAÇOS CARACTERÍSTICOS DOS SACRAMENTAIS\"}, {\"paragraph_number\": 1668, \"content\": \"São instituídos pela Igreja com vista à santificação de certos minis­térios da mesma Igreja, de certos estados de vida, de circunstâncias muito variadas da vida cristã, bem como do uso de coisas úteis ao homem. Segundo as decisões pastorais dos bispos, podem também corresponder às necessidades, à cultura e à história próprias do povo cristão duma região ou duma época. Incluem sempre uma oração, muitas vezes acompanhada dum sinal d",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 15",
+        "back": "{\"source_file\": \"p2s2cap4_1667-1690_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap4_1667-1690_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"SEGUNDA PARTE\", \"children\": [{\"text\": \"A "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0014",
+        "ccc_0016"
+      ]
+    },
+    {
+      "id": "ccc_0016",
+      "slug": "ccc_0016",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 16,
+      "content": "{\"source_file\": \"p3-intr_1691-1698_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3-intr_1691-1698_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}, {\"text\": \"INTRODUÇÃO\"}, {\"paragraph_number\": 1691, \"content\": \"«Reconhece, ó cristão, a tua dignidade. Uma vez constituído participante da natureza divina, não penses em voltar às antigas misérias da tua vida passada. Lembra-te de que cabeça e de que corpo és membro. Não te esqueças de que foste libertado do poder das trevas e transferido para a luz e para o Reino de Deus» (1).\"}, {\"paragraph_number\": 1692, \"content\": \"O Símbolo da fé, professou a grandeza dos dons de Deus ao homem na obra da criação e, mais ainda, na da redenção e santificação. O que a fé confessa, os sacramentos comunicam-no: pelos «sacramentos, que os fizeram renascer», os cristãos tornaram-se «filhos de Deus» (1 Jo 3, 1) (2), «participantes da natureza divina» (2 Pe 1, 4). Reconhecendo pela fé a sua nova dignidade, os cristãos são chamados a levar, doravante, uma vida digna do Evangelho de Cristo (3). Pelos sacramentos e pela oração, recebem a graça de Cristo e os dons do seu Espírito, que dela os tornam capazes.\"}, {\"paragraph_number\": 1693, \"content\": \"Cristo Jesus fez sempre aquilo que era do agrado do Pai (4). Viveu sempre em perfeita comunhão com Ele. De igual modo, os seus discípulos são convidados a viver sob o olhar do Pai, «que vê no segredo» (Mt 6, 6), para se to",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 16",
+        "back": "{\"source_file\": \"p3-intr_1691-1698_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3-intr_1691-1698_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A V"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0015",
+        "ccc_0017"
+      ]
+    },
+    {
+      "id": "ccc_0017",
+      "slug": "ccc_0017",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 17,
+      "content": "{\"source_file\": \"p3s1cap1_1699-1876_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap1_1699-1876_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A VOCAÇÃO DO HOMEM: A VIDA NO ESPÍRITO\"}, {\"paragraph_number\": 1699, \"content\": \"A vida no Espírito Santo realiza a vocação do homem (Capítulo primeiro). É feita de caridade divina e de solidariedade humana (Capítulo segundo). É concedida gratuitamente como salvação (Capítulo terceiro).\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"A DIGNIDADE DA PESSOA HUMANA\"}, {\"paragraph_number\": 1700, \"content\": \"A dignidade da pessoa humana radica na sua criação à imagem e semelhança de Deus (Artigo 1) e realiza-se na sua vocação à bem-aventurança divina (Artigo 2). Compete ao ser humano chegar livremente a esta realização (Artigo 3). Pelos seus actos deliberados (Artigo 4), a pessoa humana conforma-se, ou não, com o bem prometido por Deus e atestado pela consciência moral (Artigo 5). Os seres humanos edificam-se a si mesmos e crescem a partir do interior: fazem de toda a sua vida sensível e espiritual objecto do próprio crescimento (Artigo 6). Com a ajuda da graça, crescem na virtude (Artigo 7), evitam o pecado e, se o cometeram, entregam-se como o filho pródigo (1) à misericórdia do Pai dos céus (Artigo 8). Atingem, assim, a perfeição da caridade.",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 17",
+        "back": "{\"source_file\": \"p3s1cap1_1699-1876_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap1_1699-1876_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0016",
+        "ccc_0018"
+      ]
+    },
+    {
+      "id": "ccc_0018",
+      "slug": "ccc_0018",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 18,
+      "content": "{\"source_file\": \"p3s1cap2_1877-1948_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap2_1877-1948_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A VOCAÇÃO DO HOMEM: A VIDA NO ESPÍRITO\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"A COMUNIDADE HUMANA\"}, {\"paragraph_number\": 1877, \"content\": \"A vocação da humanidade é manifestar a imagem de Deus e ser transformada à imagem do Filho único do Pai. Esta vocação reveste-se de uma forma pessoal, pois cada um é chamado a entrar na bem-aventurança divina. Mas diz também respeito ao conjunto da comunidade humana.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"A PESSOA E A SOCIEDADE\"}, {\"text\": \"I. O carácter comunitário da vocação humana\"}, {\"paragraph_number\": 1878, \"content\": \"Todos os homens são chamados ao mesmo fim, que é o próprio Deus. Existe uma certa semelhança entre a unidade das pessoas divinas e a fraternidade que os homens devem instaurar entre si, na verdade e no amor (1). O amor ao próximo é inseparável do amor a Deus.\"}, {\"paragraph_number\": 1879, \"content\": \"A pessoa humana tem necessidade da vida social. Esta não constitui para ela algo de acessório, mas uma exigência da sua natureza. Graças ao contacto com os demais, ao serviço mútuo e ao diálogo com os seus irmãos, o homem desenvolve as suas capacida",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 18",
+        "back": "{\"source_file\": \"p3s1cap2_1877-1948_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap2_1877-1948_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0017",
+        "ccc_0019"
+      ]
+    },
+    {
+      "id": "ccc_0019",
+      "slug": "ccc_0019",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 19,
+      "content": "{\"source_file\": \"p3s1cap3_1949-2051_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap3_1949-2051_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A VOCAÇÃO DO HOMEM: A VIDA NO ESPÍRITO\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO TERCEIRO\", \"children\": [{\"text\": \"A SALVAÇÃO DE DEUS: A LEI E A GRAÇA\"}, {\"paragraph_number\": 1949, \"content\": \"Chamado à bem-aventurança, mas ferido pelo pecado, o homem tem necessidade da salvação de Deus. O auxílio divino é-lhe dado em Cristo, pela lei que o dirige e na graça que o ampara:\"}, {\"text\": \"«Trabalhai com temor e tremor na vossa salvação: porque é Deus que opera em vós o querer e o agir, segundo os seus desígnios» (Fl 2, 12-13).\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"A LEI MORAL\"}, {\"paragraph_number\": 1950, \"content\": \"A lei moral é obra da Sabedoria divina. Podemos defini-la, em sentido bíblico, como uma instrução paterna, uma pedagogia de Deus. Ela prescreve ao homem os caminhos, as regras de procedimento que o levam à bem-aventurança prometida e lhe proíbe os caminhos do mal, que desviam de Deus e do seu amor. E, ao mesmo tempo, firme nos seus preceitos e amável nas suas promessas.\"}, {\"paragraph_number\": 1951, \"content\": \"A lei é uma regra de procedimento emanada da autoridade competente em ordem ao bem comum. A lei moral pressupõe a ordem",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 19",
+        "back": "{\"source_file\": \"p3s1cap3_1949-2051_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s1cap3_1949-2051_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0018",
+        "ccc_0020"
+      ]
+    },
+    {
+      "id": "ccc_0020",
+      "slug": "ccc_0020",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 20,
+      "content": "{\"source_file\": \"p3s2-intr_2052-2082_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2-intr_2052-2082_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS DEZ MANDAMENTOS\"}, {\"paragraph_number\": 2052, \"content\": \"«Mestre, que devo fazer de bom para ter a vida eterna?» Ao jovem que Lhe faz esta pergunta, Jesus responde, primeiro, invocando a necessidade de reconhecer a Deus como «o único Bom», o Bem por excelência e a fonte de todo o bem. Depois, declara-lhe: «Se queres entrar na vida, observa os mandamentos». E cita ao seu interlocutor os mandamentos que dizem respeito ao amor do próximo: «Não matarás; não cometerás adultério: não furtarás; não levantarás falso testemunho; honra pai e mãe». Finalmente, resume estes mandamentos de modo positivo: «Amarás o teu próximo como a ti mesmo» (Mt 19, 16-19).\"}, {\"paragraph_number\": 2053, \"content\": \"A esta primeira resposta vem juntar-se uma segunda: «Se queres ser perfeito, vai, vende os teus bens e dá-os aos pobres, e terás um tesouro nos céus. Vem, depois, e segue-Me» (Mt 19, 21). Esta resposta não anula a primeira. Seguir Jesus implica cumprir os mandamentos. A Lei não é abolida (1): mas o homem é convidado a reencontrá-la na Pessoa do seu mestre, em Quem ela encontra o seu perfeito cumprimento. Nos três evangelhos sinópticos, o apelo de Jesus ao jovem rico, para O seguir n",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 20",
+        "back": "{\"source_file\": \"p3s2-intr_2052-2082_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2-intr_2052-2082_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": "
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0019",
+        "ccc_0021"
+      ]
+    },
+    {
+      "id": "ccc_0021",
+      "slug": "ccc_0021",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 21,
+      "content": "{\"source_file\": \"p3s2cap1_2083-2195_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2cap1_2083-2195_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS DEZ MANDAMENTOS\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"«AMARÁS O SENHOR TEU DEUS COM TODO O TEU CORAÇÃO, COM TODA A TUA ALMA E COM TODAS AS TUAS FORÇAS»\"}, {\"paragraph_number\": 2083, \"content\": \"Jesus resumiu os deveres do homem para com Deus nestas palavras: «Amarás o Senhor teu Deus com todo o teu coração, com toda a tua alma, com toda a tua mente» (Mt 22, 37) (1). Elas são um eco imediato do apelo solene: «Escuta, Israel: o Senhor nosso Deus é o único» (Dt 6, 4).\"}, {\"text\": \"Deus foi o primeiro a amar. O amor do Deus único é lembrado na primeira das «dez palavras». Em seguida, os mandamentos explicitam a resposta de amor que o homem é chamado a dar ao seu Deus.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"O PRIMEIRO MANDAMENTO\"}, {\"text\": \"«Eu sou o Senhor, teu Deus, que te tirei da terra do Egipto, dessa casa da escravidão. Não terás outros deuses perante Mim. Não farás de ti nenhuma imagem esculpida, nem figura que existe lá no alto do céu ou cá em baixo, na terra, ou nas águas debaixo da terra. Não te prostrarás diante delas nem lhes prestarás culto (Ex 20, 2-5) (2).\"}, {\"text\": \"«Está escrito: \\\"Ao",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 21",
+        "back": "{\"source_file\": \"p3s2cap1_2083-2195_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2cap1_2083-2195_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0020",
+        "ccc_0022"
+      ]
+    },
+    {
+      "id": "ccc_0022",
+      "slug": "ccc_0022",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 22,
+      "content": "{\"source_file\": \"p3s2cap2_2196-2557_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2cap2_2196-2557_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A VIDA EM CRISTO\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"OS DEZ MANDAMENTOS\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"«AMARÁS O TEU PRÓXIMO COMO A TI MESMO»\"}, {\"text\": \"Jesus disse aos discípulos: «Amai-vos uns aos outros, como Eu vos amei» (Jo 13, 34).\"}, {\"paragraph_number\": 2196, \"content\": \"Respondendo à questão posta sobre o primeiro dos mandamentos, Jesus disse: «O primeiro é: \\\"Escuta, Israel! O Senhor nosso Deus é o único Senhor. Amarás o Senhor teu Deus com todo o teu coração, com toda a tua alma, com todo o teu entendimento e com todas as tuas forças!\\\". O segundo é este: \\\"Amarás o teu próximo como a ti mesmo\\\". Não há outro mandamento maior do que estes» (Mc 12, 29-31).\"}, {\"text\": \"E o apóstolo São Paulo lembra: «Quem ama o próximo cumpre plenamente a lei. De facto: \\\"Não cometerás adultério, não matarás, não furtarás, não cobiçarás\\\", bem como qualquer outro mandamento, estão resumidos numa só frase: \\\"Amarás ao próximo como a ti mesmo\\\". O amor não faz mal ao próximo. Assim, é no amor que está o pleno cumprimento da lei» (Rm 13, 8-10).\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 4\", \"children\": [{\"text\": \"O QUARTO MANDAMENTO\"}, {\"text\": \"«Honra pai e mãe, a fim de prolongares os",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 22",
+        "back": "{\"source_file\": \"p3s2cap2_2196-2557_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p3s2cap2_2196-2557_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"TERCEIRA PARTE\", \"children\": [{\"text\": \"A"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0021",
+        "ccc_0023"
+      ]
+    },
+    {
+      "id": "ccc_0023",
+      "slug": "ccc_0023",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 23,
+      "content": "{\"source_file\": \"p4-intr_2558-2565_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4-intr_2558-2565_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CRISTÃ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A ORAÇÃO NA VIDA CRISTÃ\"}, {\"paragraph_number\": 2558, \"content\": \"«Mistério admirável da nossa fé!». A Igreja professa-o no Símbolo dos Apóstolos (primeira parte) e celebra-o na liturgia sacramental (segunda parte), para que a vida dos fiéis seja configurada com Cristo no Espírito Santo para glória de Deus Pai (terceira parte). Este mistério exige, portanto, que os fiéis nele creiam, o celebrem e dele vivam, numa relação viva e pessoal com o Deus vivo e verdadeiro. Esta relação é a oração.\"}, {\"text\": \"O QUE É A ORAÇÃO?\"}, {\"text\": \"«Para mim, a oração é um impulso do coração, é um simples olhar lançado para o céu, é um grito de gratidão e de amor, tanto no meio da tribulação como no meio da alegria» (1).\"}, {\"text\": \"A ORAÇÃO COMO DOM DE DEUS\"}, {\"paragraph_number\": 2559, \"content\": \"«A oração é a elevação da alma para Deus ou o pedido feito a Deus de bens convenientes» (2). De onde é que falamos, ao orar? Das alturas do nosso orgulho e da nossa vontade própria, ou das «profundezas» (Sl 130, 1) dum coração humilde e contrito? Aquele que se humilha é que é elevado (3). A humildade é o fundamento da oração. «Não sabemos o que havemos de pedir para rezarmos como deve ser» (Rm ",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 23",
+        "back": "{\"source_file\": \"p4-intr_2558-2565_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4-intr_2558-2565_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORA"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0022",
+        "ccc_0024"
+      ]
+    },
+    {
+      "id": "ccc_0024",
+      "slug": "ccc_0024",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 24,
+      "content": "{\"source_file\": \"p4s1cap1_2566-2649_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap1_2566-2649_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CRISTÃ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A ORAÇÃO NA VIDA CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO PRIMEIRO\", \"children\": [{\"text\": \"A REVELAÇÃO DA ORAÇÃO\"}, {\"text\": \"O apelo universal à oração\"}, {\"paragraph_number\": 2566, \"content\": \"O homem anda à procura de Deus. Pela criação, Deus chama todos os seres do nada à existência. Coroado de glória e esplendor (1), o homem, depois dos anjos, é capaz de reconhecer «que o nome do Senhor é grande em toda a terra» (2). Mesmo depois de, pelo pecado, ter perdido a semelhança com Deus, o homem continua a ser à imagem do seu Criador. Conserva o desejo d'Aquele que o chama à existência. Todas as religiões testemunham esta busca essencial do homem (3).\"}, {\"paragraph_number\": 2567, \"content\": \"Mas é Deus que primeiro chama o homem. Muito embora o homem se esqueça do seu Criador ou se esconda da sua face, corra atrás dos ídolos ou acuse a divindade de o ter abandonado, o Deus vivo e verdadeiro chama incansavelmente cada pessoa ao misterioso encontro da oração. Na oração, é sempre o amor do Deus fiel a dar o primeiro passo; o passo do homem é sempre uma resposta. A medida que Deus Se revela e revela o homem a si mesmo, a oração surge como um apelo recíproco, um drama",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 24",
+        "back": "{\"source_file\": \"p4s1cap1_2566-2649_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap1_2566-2649_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A O"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0023",
+        "ccc_0025"
+      ]
+    },
+    {
+      "id": "ccc_0025",
+      "slug": "ccc_0025",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 25,
+      "content": "{\"source_file\": \"p4s1cap2_2650-2696_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap2_2650-2696_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CRISTÃ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A ORAÇÃO NA VIDA CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO SEGUNDO\", \"children\": [{\"text\": \"A TRADIÇÃO DA ORAÇÃO\"}, {\"paragraph_number\": 2650, \"content\": \"A oração não se reduz ao brotar espontâneo dum impulso interior: para orar, é preciso querer. Tão-pouco basta saber o que a Escritura revela sobre a oração: é preciso também aprender a rezar. Ora, é através duma transmissão viva (a Tradição sagrada), que o Espírito Santo, na «Igreja crente e orante» (1), ensina os filhos de Deus a orar.\"}, {\"paragraph_number\": 2651, \"content\": \"A tradição da oração cristã é uma das formas de crescimento da Tradição da fé, particularmente pela contemplação e pelo estudo dos crentes, que guardam no seu coração os acontecimentos e as palavras da economia da salvação, e pela penetração profunda das realidades espirituais que eles experimentam (2).\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"NAS FONTES DA ORAÇÃO\"}, {\"paragraph_number\": 2652, \"content\": \"O Espírito Santo é a «água viva» que, no coração orante, «jorra para a vida eterna» (3). É Ele quem nos ensina a recolhê-la na própria Fonte: Jesus Cristo. Ora, há na vida cristã mananciais onde Cristo nos esp",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 25",
+        "back": "{\"source_file\": \"p4s1cap2_2650-2696_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap2_2650-2696_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A O"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0024",
+        "ccc_0026"
+      ]
+    },
+    {
+      "id": "ccc_0026",
+      "slug": "ccc_0026",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 26,
+      "content": "{\"source_file\": \"p4s1cap3_2697-2758_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap3_2697-2758_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CRISTÃ\"}]}, {\"type\": \"section\", \"title\": \"PRIMEIRA SECÇÃO\", \"children\": [{\"text\": \"A ORAÇÃO NA VIDA CRISTÃ\"}]}, {\"type\": \"chapter\", \"title\": \"CAPÍTULO TERCEIRO\", \"children\": [{\"text\": \"A VIDA DE ORAÇÃO\"}, {\"paragraph_number\": 2697, \"content\": \"A oração é a vida do coração novo. Deve animar-nos a todo o momento. Mas acontece que nos esquecemos d'Aquele que é a nossa vida e o nosso tudo. É por isso que os Padres espirituais, na sequência do Deuteronómio e dos profetas, insistem na oração como «lembrança de Deus», frequente despertador da «memória do coração». «Devemos lembrar-nos de Deus com mais frequência do que respiramos» (1). Mas não se pode orar «em todo o tempo», se não se orar em certos momentos, voluntariamente: são os tempos fortes da oração cristã, em intensidade e duração.\"}, {\"paragraph_number\": 2698, \"content\": \"A Tradição da Igreja propõe aos fiéis ritmos de oração destinados a alimentar a oração contínua. Alguns são quotidianos: a oração da manhã e da noite, antes e depois das refeições, a Liturgia das Horas. O Domingo, centrado na Eucaristia, é santificado principalmente pela oração. O ciclo do ano litúrgico e as suas grandes festas constituem os ritmos fundamentais da vida de oração dos cristãos.\"}, {\"paragraph_number\": 2699, \"content\": \"",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Eclesiologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 26",
+        "back": "{\"source_file\": \"p4s1cap3_2697-2758_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s1cap3_2697-2758_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A O"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0025",
+        "ccc_0027"
+      ]
+    },
+    {
+      "id": "ccc_0027",
+      "slug": "ccc_0027",
+      "part": "",
+      "section": "",
+      "chapter": "",
+      "article": "",
+      "paragraph_number": 27,
+      "content": "{\"source_file\": \"p4s2_2759-2865_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s2_2759-2865_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CRISTÃ\"}]}, {\"type\": \"section\", \"title\": \"SEGUNDA SECÇÃO\", \"children\": [{\"text\": \"A ORAÇÃO DO SENHOR: «PAI NOSSO»\"}, {\"text\": \"Pai Nosso que estais nos céus,santificado seja o vosso Nome,venha a nós o vosso Reino,seja feita a vossa vontade assim na terra como no céu. O pão nosso de cada dia nos dai hoje,perdoai-nos as nossas ofensasassim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação,mas livrai-nos do Mal.\"}, {\"paragraph_number\": 2760, \"content\": \"Bem cedo o uso litúrgico concluiu a oração do Senhor por uma doxologia. Na Didakê: «Porque Vosso é o poder e a glória, pelos séculos» (3). A esta doxologia, as Constituições Apostólicas acrescentam no princípio: «o Reino» (4), e essa é a fórmula que se usa em nossos dias na oração ecuménica. A tradição bizantina acrescenta, depois de «a glória»: «Pai, Filho e Espírito Santo». O Missal Romano amplia a última petição (5) na perspectiva explícita da «expectativa da bem-aventurada esperança» (6) e da vinda de Jesus Cristo nosso Senhor, seguindo-se a aclamação da assembleia que retoma a doxologia das Constituições Apostólicas.\"}]}, {\"type\": \"article\", \"title\": \"ARTIGO 1\", \"children\": [{\"text\": \"«O RESUMO DE TODO O EVANGELHO»\"}, {\"paragraph_number\": 2761, \"content\": \"«A oração dominical é verd",
+      "breadcrumbs": [
+        "Catecismo"
+      ],
+      "doctrine": "Mariologia",
+      "study_level": "iniciante",
+      "flashcard": {
+        "front": "CCC 27",
+        "back": "{\"source_file\": \"p4s2_2759-2865_po.html\", \"url\": \"https://www.vatican.va/archive/cathechism_po/index_new/p4s2_2759-2865_po.html\", \"structure\": [{\"type\": \"part\", \"title\": \"QUARTA PARTE\", \"children\": [{\"text\": \"A ORAÇÃO CR"
+      },
+      "rag": {
+        "embedding_ready": true,
+        "chunk_type": "paragraph"
+      },
+      "related": [
+        "ccc_0026",
+        "ccc_0028"
+      ]
+    }
+  ]
+}
