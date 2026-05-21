@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 // Service Worker — Totus Tuus PWA
 // Cache-first for static assets, network-first for API calls
 
 const CACHE_NAME = 'totus-tuus-v1';
+=======
+// Service Worker — Examen PWA
+// Cache-first for static assets, network-first for API calls
+
+const CACHE_NAME = 'examen-v1';
+>>>>>>> d0d0cd683fd6a6cfa6963e27ce43dcb179d72d7a
 const STATIC_ASSETS = [
   '/',
   '/index.html',
