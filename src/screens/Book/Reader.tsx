@@ -15,6 +15,88 @@ const booksData = {
   tratado: require('../../content/devotion/tratado_verdadeira_devocao.json'),
 };
 
+/**
+ * Returns a flat navigable array for each book type.
+ * - catecismo: entries array from the JSON
+ * - compendium: questions array from the JSON
+ * - tratado: the JSON itself (already a flat array)
+ */
+function getBookItems(bookId: string): any[] {
+  const raw = booksData[bookId as keyof typeof booksData];
+  if (bookId === 'catecismo') {
+    return raw.entries ?? [];
+  }
+  if (bookId === 'compendium') {
+    return raw.questions ?? [];
+  }
+  // tratado is already a flat array
+  return raw;
+}
+
+/**
+ * Recursively extract text content from a catecismo "structure" array.
+ * Each element in structure can be:
+ *   - { text: "..." } — a title or heading
+ *   - { paragraph_number: N, content: "..." } — a numbered paragraph
+ *   - { type: "part"|"section"|"chapter"|"article", title: "...", children: [...] }
+ */
+function extractTextFromStructure(structure: any[]): string[] {
+  const result: string[] = [];
+  for (const node of structure) {
+    if (node.title) {
+      result.push(node.title);
+    }
+    if (node.text) {
+      result.push(node.text);
+    }
+    if (node.content) {
+      const prefix = node.paragraph_number ? `§${node.paragraph_number}. ` : '';
+      result.push(prefix + node.content);
+    }
+    if (node.children && Array.isArray(node.children)) {
+      result.push(...extractTextFromStructure(node.children));
+    }
+  }
+  return result;
+}
+
+/**
+ * Parse the catecismo entry content field.
+ * The content field is a JSON string containing { source_file, url, structure: [...] }
+ */
+function parseCatecismoContent(entry: any): string[] {
+  if (!entry?.content) return [];
+  try {
+    const parsed = typeof entry.content === 'string' ? JSON.parse(entry.content) : entry.content;
+    if (parsed.structure && Array.isArray(parsed.structure)) {
+      return extractTextFromStructure(parsed.structure);
+    }
+    // Fallback: if content is already a plain string
+    return [typeof parsed === 'string' ? parsed : JSON.stringify(parsed)];
+  } catch {
+    // If JSON parsing fails, treat as plain text
+    return [String(entry.content)];
+  }
+}
+
+/**
+ * Extract readable content from a compendium question entry.
+ * Each question has: { question, answer, references }
+ */
+function parseCompendiumContent(entry: any): string[] {
+  const result: string[] = [];
+  if (entry?.question) {
+    result.push(entry.question);
+  }
+  if (entry?.answer && entry.answer.trim() !== '') {
+    result.push(entry.answer);
+  }
+  if (entry?.references && Array.isArray(entry.references) && entry.references.length > 0) {
+    result.push('Referências: ' + entry.references.join('; '));
+  }
+  return result;
+}
+
 type Props = NativeStackScreenProps<RootStackParamList, 'BookReader'>;
 
 export function BookReaderScreen({ route, navigation }: Props) {
@@ -25,15 +107,15 @@ export function BookReaderScreen({ route, navigation }: Props) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const scrollRef = useRef<ScrollView>(null);
 
-  const bookData = booksData[bookId];
-  const currentItem = bookData[currentIndex];
+  const bookItems = useMemo(() => getBookItems(bookId), [bookId]);
+  const currentItem = bookItems[currentIndex];
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ y: 0, animated: false });
   }, [currentIndex]);
 
   const handleNext = () => {
-    if (currentIndex < bookData.length - 1) {
+    if (currentIndex < bookItems.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -44,21 +126,44 @@ export function BookReaderScreen({ route, navigation }: Props) {
     }
   };
 
-  // Helper to render content based on structure
+  // Helper to render content based on book type and structure
   const renderContent = () => {
     if (!currentItem) return null;
 
-    // Catecismo and Compendium use content: string[]
-    if (Array.isArray(currentItem.content)) {
-      return currentItem.content.map((p: string, i: number) => (
+    if (bookId === 'catecismo') {
+      const paragraphs = parseCatecismoContent(currentItem);
+      return paragraphs.map((p: string, i: number) => (
         <Text key={i} style={styles.paragraph}>{p}</Text>
       ));
     }
-    
+
+    if (bookId === 'compendium') {
+      const paragraphs = parseCompendiumContent(currentItem);
+      return paragraphs.map((p: string, i: number) => {
+        // First paragraph is the question — render with a distinct style
+        if (i === 0) {
+          return (
+            <View key={i} style={styles.questionContainer}>
+              <Text style={styles.questionNumber}>Pergunta {currentItem.number}</Text>
+              <Text style={styles.questionText}>{p}</Text>
+            </View>
+          );
+        }
+        return <Text key={i} style={styles.paragraph}>{p}</Text>;
+      });
+    }
+
     // Tratado uses content: string
     if (typeof currentItem.content === 'string') {
-      return currentItem.content.split('\n').filter(p => p.trim() !== '').map((p: string, i: number) => (
+      return currentItem.content.split('\n').filter((p: string) => p.trim() !== '').map((p: string, i: number) => (
         <Text key={i} style={styles.paragraph}>{p.trim()}</Text>
+      ));
+    }
+
+    // Fallback for content as string[]
+    if (Array.isArray(currentItem.content)) {
+      return currentItem.content.map((p: string, i: number) => (
+        <Text key={i} style={styles.paragraph}>{p}</Text>
       ));
     }
 
@@ -67,17 +172,22 @@ export function BookReaderScreen({ route, navigation }: Props) {
 
   const getTitle = () => {
     if (!currentItem) return 'Estudo';
-    if (bookId === 'tratado') return currentItem.chapter || 'Tratado';
     
-    // For Catecismo/Compendium, try to use the first line of content if it looks like a title
-    if (Array.isArray(currentItem.content) && currentItem.content.length > 0) {
-      const firstLine = currentItem.content[0];
-      if (firstLine.length < 50 && firstLine === firstLine.toUpperCase()) {
-        return firstLine;
+    if (bookId === 'catecismo') {
+      // Try to extract a meaningful title from the entry
+      if (currentItem.paragraph_number) {
+        return `CCC §${currentItem.paragraph_number}`;
       }
+      return currentItem.id || 'Catecismo';
+    }
+
+    if (bookId === 'compendium') {
+      return `Compêndio §${currentItem.number ?? currentIndex + 1}`;
     }
     
-    // Fallback to formatted filename
+    if (bookId === 'tratado') return currentItem.chapter || 'Tratado';
+    
+    // Fallback
     return currentItem.file?.replace(/(_po)?\.html$/, '').replace(/_/g, ' ') || 'Estudo';
   };
 
@@ -88,14 +198,14 @@ export function BookReaderScreen({ route, navigation }: Props) {
         <BackButton />
         <View style={styles.headerTitleContainer}>
           <Text style={styles.headerTitle} numberOfLines={1}>{getTitle()}</Text>
-          <Text style={styles.headerSubtitle}>{currentIndex + 1} de {bookData.length}</Text>
+          <Text style={styles.headerSubtitle}>{currentIndex + 1} de {bookItems.length}</Text>
         </View>
         <View style={{ width: 40 }} />
       </View>
 
       {/* Progress Bar */}
       <View style={styles.progressBarContainer}>
-        <View style={[styles.progressBar, { width: `${((currentIndex + 1) / bookData.length) * 100}%` }]} />
+        <View style={[styles.progressBar, { width: `${((currentIndex + 1) / bookItems.length) * 100}%` }]} />
       </View>
 
       <ScrollView 
@@ -120,12 +230,12 @@ export function BookReaderScreen({ route, navigation }: Props) {
           </TouchableOpacity>
 
           <TouchableOpacity 
-            style={[styles.navBtn, currentIndex === bookData.length - 1 && styles.disabledBtn]} 
+            style={[styles.navBtn, currentIndex === bookItems.length - 1 && styles.disabledBtn]} 
             onPress={handleNext}
-            disabled={currentIndex === bookData.length - 1}
+            disabled={currentIndex === bookItems.length - 1}
           >
-            <Text style={[styles.navBtnText, currentIndex === bookData.length - 1 && { color: colors.placeholder }]}>Próximo</Text>
-            <Feather name="arrow-right" size={20} color={currentIndex === bookData.length - 1 ? colors.placeholder : colors.accent} />
+            <Text style={[styles.navBtnText, currentIndex === bookItems.length - 1 && { color: colors.placeholder }]}>Próximo</Text>
+            <Feather name="arrow-right" size={20} color={currentIndex === bookItems.length - 1 ? colors.placeholder : colors.accent} />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -190,6 +300,27 @@ const getStyles = (colors: any, spacing: any, typography: any, radius: any, shad
     lineHeight: 28,
     marginBottom: spacing.md,
     textAlign: 'justify',
+  },
+  questionContainer: {
+    marginBottom: spacing.lg,
+    paddingBottom: spacing.md,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.divider,
+  },
+  questionNumber: {
+    ...typography.small,
+    color: colors.accent,
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+    marginBottom: spacing.xs,
+  },
+  questionText: {
+    ...typography.body,
+    color: colors.primaryText,
+    lineHeight: 28,
+    fontWeight: '600',
+    fontStyle: 'italic',
   },
   footerNav: {
     flexDirection: 'row',

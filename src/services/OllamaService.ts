@@ -1,5 +1,5 @@
 import { Platform } from 'react-native';
-import { searchVerses, getChapterVerses } from './BibleDatabaseService';
+import { searchVerses, getChapterVerses } from './index';
 import { AI_CONFIG } from '../config/aiConfig';
 
 /**

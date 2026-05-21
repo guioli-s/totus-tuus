@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { getDailyVerse, getDailyPurpose } from '../utils/daily';
-import { saveSettingsToDB, loadExamHistory } from '../database/db';
+import { saveSettingsToDB, loadExamHistory } from '../database';
 import { calculateSpiritualProfile, getTopThemes } from '../utils/spiritualProfile';
 
 interface SettingsState {

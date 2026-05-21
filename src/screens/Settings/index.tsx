@@ -7,7 +7,7 @@ import { Paragraph } from '../../components/Paragraph';
 import { Divider } from '../../components/Divider';
 import { BackButton } from '../../components/BackButton';
 import { useSettingsStore } from '../../store/useSettingsStore';
-import { saveSettingsToDB } from '../../database/db';
+import { saveSettingsToDB } from '../../database';
 import { useAppTheme } from '../../theme';
 
 export function SettingsScreen() {

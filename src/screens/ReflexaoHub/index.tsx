@@ -8,7 +8,7 @@ import { Paragraph } from '../../components/Paragraph';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { BackButton } from '../../components/BackButton';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveSession } from '../../database/db';
+import { saveSession } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 

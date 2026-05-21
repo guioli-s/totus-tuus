@@ -60,8 +60,6 @@ export function EstudosScreen() {
             onPress={() => {
               if (opt.id === 'bible-study') {
                 navigation.navigate('EstudoBiblico');
-              } else if (opt.id === 'compendium') {
-                navigation.navigate('BookReader', { bookId: 'compendium', index: 0 });
               } else {
                 navigation.navigate('BookChapters', { bookId: opt.id as any });
               }

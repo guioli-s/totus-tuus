@@ -1,0 +1,24 @@
+{
+  "name": "Totus Tuus",
+  "short_name": "Totus Tuus",
+  "description": "Exame de Consciência, Catecismo, Compêndio e Estudos Bíblicos da Igreja Católica.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0D0D0D",
+  "background_color": "#0D0D0D",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
