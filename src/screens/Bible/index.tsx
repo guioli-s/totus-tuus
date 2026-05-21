@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, FlatList, Modal, SafeAreaView, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, FlatList, Modal, SafeAreaView, ScrollView, TextInput, KeyboardAvoidingView, Platform, ActivityIndicator } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Feather } from '@expo/vector-icons';
 import { ScreenContainer } from '../../components/ScreenContainer';
@@ -7,6 +7,7 @@ import { BackButton } from '../../components/BackButton';
 import { RootStackParamList } from '../../navigation/AppNavigator';
 import { useSettingsStore } from '../../store/useSettingsStore';
 import { saveSettingsToDB } from '../../database';
+import { searchVerses } from '../../services';
 import { useAppTheme } from '../../theme';
 
 // Opcional: pode ser feito lazy load, mas o Metro agrupa bem
@@ -27,6 +28,13 @@ export function BibleScreen({ navigation }: Props) {
   // State para os modais
   const [isBookModalVisible, setBookModalVisible] = useState(false);
   const [selectedBookForChapters, setSelectedBookForChapters] = useState<number | null>(null);
+
+  // State para Pesquisa
+  const [isSearchModalVisible, setSearchModalVisible] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const searchTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const flatListRef = useRef<FlatList>(null);
 
@@ -64,6 +72,42 @@ export function BibleScreen({ navigation }: Props) {
     setBookModalVisible(true);
   };
 
+  const handleSearch = async (text: string) => {
+    setSearchQuery(text);
+    if (searchTimeout.current) clearTimeout(searchTimeout.current);
+    
+    if (text.length < 3) {
+      setSearchResults([]);
+      setIsSearching(false);
+      return;
+    }
+
+    setIsSearching(true);
+    searchTimeout.current = setTimeout(async () => {
+      try {
+        const results = await searchVerses(text, 30);
+        setSearchResults(results);
+      } catch (error) {
+        console.error('Erro na pesquisa da Bíblia:', error);
+      } finally {
+        setIsSearching(false);
+      }
+    }, 500);
+  };
+
+  const navigateToSearchVerse = (result: any) => {
+    const bIndex = bibleData.findIndex(b => b.livro === result.bookName);
+    if (bIndex !== -1) {
+      updateAndSaveState(bIndex, result.chapter - 1); // Chapter is 1-indexed in UI but 0-indexed in array? Wait, capitulos array index is chapter-1 usually. Let me check: `currentBook.capitulos[chapterIndex]` and `cap.capitulo` is the number. Usually it's chapter - 1.
+      // Wait, let's look at bibleData structure: capitulos array has objects { capitulo: number, versiculos: [] }. The index is usually capitulo - 1.
+      const cIndex = bibleData[bIndex].capitulos.findIndex((c: any) => c.capitulo === result.chapter);
+      if (cIndex !== -1) {
+         updateAndSaveState(bIndex, cIndex);
+      }
+    }
+    setSearchModalVisible(false);
+  };
+
   const renderVerse = ({ item }: { item: any }) => (
     <View style={styles.verseContainer}>
       <Text style={styles.verseNumber}>{item.numero}</Text>
@@ -83,7 +127,9 @@ export function BibleScreen({ navigation }: Props) {
             </Text>
             <Feather name="chevron-down" size={20} color={colors.primaryText} />
           </TouchableOpacity>
-          <View style={{ width: 40 }} />
+          <TouchableOpacity onPress={() => { setSearchQuery(''); setSearchResults([]); setSearchModalVisible(true); }} style={styles.searchIconBtn}>
+            <Feather name="search" size={24} color={colors.primaryText} />
+          </TouchableOpacity>
         </View>
 
         {/* Leitura */}
@@ -150,6 +196,60 @@ export function BibleScreen({ navigation }: Props) {
                 </TouchableOpacity>
               ))}
             </ScrollView>
+          )}
+        </SafeAreaView>
+      </Modal>
+
+      {/* Modal Pesquisa Bíblica */}
+      <Modal visible={isSearchModalVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setSearchModalVisible(false)}>
+        <SafeAreaView style={styles.modalSafeArea}>
+          <View style={styles.searchHeader}>
+            <TouchableOpacity onPress={() => setSearchModalVisible(false)} style={styles.closeSearchBtn}>
+              <Feather name="x" size={24} color={colors.primaryText} />
+            </TouchableOpacity>
+            <View style={styles.searchInputContainer}>
+              <Feather name="search" size={20} color={colors.secondaryText} style={styles.searchIcon} />
+              <TextInput
+                style={styles.searchInput}
+                placeholder="Pesquisar na Bíblia..."
+                placeholderTextColor={colors.placeholder}
+                value={searchQuery}
+                onChangeText={handleSearch}
+                autoFocus
+                returnKeyType="search"
+              />
+              {searchQuery.length > 0 && (
+                <TouchableOpacity onPress={() => handleSearch('')} style={styles.clearSearchBtn}>
+                  <Feather name="x-circle" size={18} color={colors.secondaryText} />
+                </TouchableOpacity>
+              )}
+            </View>
+          </View>
+
+          {isSearching ? (
+            <View style={styles.centerContainer}>
+              <ActivityIndicator size="large" color={colors.accent} />
+            </View>
+          ) : (
+            <FlatList
+              data={searchResults}
+              keyExtractor={(item) => item.id.toString()}
+              contentContainerStyle={styles.searchResultsContent}
+              keyboardShouldPersistTaps="handled"
+              ListEmptyComponent={
+                searchQuery.length >= 3 ? (
+                  <Text style={styles.emptyText}>Nenhum versículo encontrado.</Text>
+                ) : (
+                  <Text style={styles.emptyText}>Digite pelo menos 3 letras para buscar.</Text>
+                )
+              }
+              renderItem={({ item }) => (
+                <TouchableOpacity style={styles.searchResultItem} onPress={() => navigateToSearchVerse(item)}>
+                  <Text style={styles.searchResultTitle}>{item.bookName} {item.chapter}:{item.verse}</Text>
+                  <Text style={styles.searchResultSnippet} numberOfLines={3}>{item.text}</Text>
+                </TouchableOpacity>
+              )}
+            />
           )}
         </SafeAreaView>
       </Modal>
@@ -287,5 +387,73 @@ const getStyles = (colors: any, spacing: any, typography: any, radius: any) => S
     fontWeight: '600',
     textAlign: 'center',
     includeFontPadding: false,
+  },
+  searchIconBtn: {
+    width: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  searchHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: spacing.md,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.divider,
+    backgroundColor: colors.surface,
+  },
+  closeSearchBtn: {
+    padding: spacing.sm,
+    marginRight: spacing.sm,
+  },
+  searchInputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.inputBackground,
+    borderRadius: radius.full,
+    paddingHorizontal: spacing.md,
+    height: 40,
+  },
+  searchIcon: {
+    marginRight: spacing.sm,
+  },
+  searchInput: {
+    flex: 1,
+    ...typography.body,
+    color: colors.primaryText,
+    paddingVertical: 0, // Fix android text input alignment
+  },
+  clearSearchBtn: {
+    padding: spacing.xs,
+  },
+  searchResultsContent: {
+    padding: spacing.md,
+    paddingBottom: spacing.xxl,
+  },
+  searchResultItem: {
+    paddingVertical: spacing.md,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.divider,
+  },
+  searchResultTitle: {
+    ...typography.subtitle,
+    color: colors.accent,
+    fontWeight: '700',
+    marginBottom: spacing.xs,
+  },
+  searchResultSnippet: {
+    ...typography.body,
+    color: colors.secondaryText,
+  },
+  centerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  emptyText: {
+    ...typography.body,
+    color: colors.placeholder,
+    textAlign: 'center',
+    marginTop: spacing.xl,
   },
 });

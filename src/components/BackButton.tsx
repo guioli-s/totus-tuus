@@ -4,18 +4,22 @@ import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { useAppTheme } from '../theme';
 
-export function BackButton() {
+interface BackButtonProps {
+  onPress?: () => void;
+}
+
+export function BackButton({ onPress }: BackButtonProps) {
   const navigation = useNavigation();
   const { colors, spacing } = useAppTheme();
 
-  if (!navigation.canGoBack()) {
+  if (!navigation.canGoBack() && !onPress) {
     return null;
   }
 
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={() => navigation.goBack()}
+      onPress={onPress || (() => navigation.goBack())}
       hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}
     >
       <Feather name="arrow-left" size={26} color={colors.primaryText} />
