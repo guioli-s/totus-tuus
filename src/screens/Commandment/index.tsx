@@ -7,6 +7,7 @@ import { Paragraph } from '../../components/Paragraph';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { SecondaryButton } from '../../components/SecondaryButton';
 import { Divider } from '../../components/Divider';
+import { BackButton } from '../../components/BackButton';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
 import { saveSkipped, saveSession, markSinnedInDB } from '../../database';
@@ -63,6 +64,9 @@ export function CommandmentScreen({ route, navigation }: Props) {
 
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
+      <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
+        <BackButton />
+      </View>
       <ScrollView
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}

@@ -8,6 +8,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { TextArea } from '../../components/TextArea';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { SecondaryButton } from '../../components/SecondaryButton';
+import { BackButton } from '../../components/BackButton';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
 import { saveReflection, saveSession } from '../../database';
@@ -61,6 +62,9 @@ export function ReflectionScreen({ route, navigation }: Props) {
 
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
+      <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
+        <BackButton />
+      </View>
       <KeyboardAvoidingView
         style={styles.flex}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
