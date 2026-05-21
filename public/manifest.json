@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "Totus Tuus",
   "short_name": "Totus Tuus",
-=======
-  "name": "Examen",
-  "short_name": "Examen",
->>>>>>> d0d0cd683fd6a6cfa6963e27ce43dcb179d72d7a
   "description": "Exame de Consciência, Catecismo, Compêndio e Estudos Bíblicos da Igreja Católica.",
   "start_url": "/",
   "display": "standalone",
