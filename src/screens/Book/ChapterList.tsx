@@ -19,6 +19,24 @@ const bookTitles = {
   tratado: 'Tratado da Devoção',
 };
 
+/**
+ * Returns a flat navigable array for each book type.
+ * - catecismo: entries array from the JSON
+ * - compendium: questions array from the JSON
+ * - tratado: the JSON itself (already a flat array)
+ */
+function getBookItems(bookId: string): any[] {
+  const raw = booksData[bookId as keyof typeof booksData];
+  if (bookId === 'catecismo') {
+    return raw.entries ?? [];
+  }
+  if (bookId === 'compendium') {
+    return raw.questions ?? [];
+  }
+  // tratado is already a flat array
+  return raw;
+}
+
 type Props = NativeStackScreenProps<RootStackParamList, 'BookChapters'>;
 
 export function BookChaptersScreen({ route, navigation }: Props) {
@@ -26,19 +44,25 @@ export function BookChaptersScreen({ route, navigation }: Props) {
   const { colors, spacing, typography, radius, shadow } = useAppTheme();
   const styles = useMemo(() => getStyles(colors, spacing, typography, radius, shadow), [colors, spacing, typography, radius, shadow]);
 
-  const bookData = booksData[bookId];
+  const bookItems = useMemo(() => getBookItems(bookId), [bookId]);
 
   const renderChapterBox = (item: any, index: number) => {
     let label = index.toString();
-    
-    if (index === 0) {
+
+    if (bookId === 'catecismo') {
+      // Show the paragraph_number for catecismo entries
+      label = item.paragraph_number?.toString() ?? index.toString();
+    } else if (bookId === 'compendium') {
+      // Show the question number for compendium
+      label = item.number?.toString() ?? index.toString();
+    } else if (index === 0) {
       label = 'Prólogo';
-    } else if (bookId === 'tratado' && index === bookData.length - 1) {
+    } else if (bookId === 'tratado' && index === bookItems.length - 1) {
       label = 'Apêndice';
     }
-    
+
     const isTextLabel = isNaN(Number(label));
-    
+
     return (
       <TouchableOpacity
         key={index}
@@ -70,7 +94,7 @@ export function BookChaptersScreen({ route, navigation }: Props) {
         <Text style={styles.subtitle}>Selecione a seção ou capítulo:</Text>
         
         <View style={styles.grid}>
-          {bookData.map((item: any, index: number) => renderChapterBox(item, index))}
+          {bookItems.map((item: any, index: number) => renderChapterBox(item, index))}
         </View>
       </ScrollView>
     </SafeAreaView>

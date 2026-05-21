@@ -5,10 +5,10 @@ import {
   loadConfessionList,
   loadSessionFromDB,
   loadSettingsFromDB,
-} from '../database/db';
+} from '../database';
 import { useExamenStore } from '../store/useExamenStore';
 import { useSettingsStore } from '../store/useSettingsStore';
-import { initBibleDatabase } from '../services/BibleDatabaseService';
+import { initBibleDatabase } from '../services';
 
 export function useDatabase() {
   const [isReady, setIsReady] = useState(false);

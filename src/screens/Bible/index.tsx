@@ -6,7 +6,7 @@ import { ScreenContainer } from '../../components/ScreenContainer';
 import { BackButton } from '../../components/BackButton';
 import { RootStackParamList } from '../../navigation/AppNavigator';
 import { useSettingsStore } from '../../store/useSettingsStore';
-import { saveSettingsToDB } from '../../database/db';
+import { saveSettingsToDB } from '../../database';
 import { useAppTheme } from '../../theme';
 
 // Opcional: pode ser feito lazy load, mas o Metro agrupa bem

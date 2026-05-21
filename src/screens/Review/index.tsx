@@ -9,7 +9,7 @@ import { PrimaryButton } from '../../components/PrimaryButton';
 import { Divider } from '../../components/Divider';
 import { commandments } from '../../content/commandments';
 import { useExamenStore, ConfessionEntry } from '../../store/useExamenStore';
-import { clearAllReflections, saveConfessionList, deleteSession, saveExamToHistory } from '../../database/db';
+import { clearAllReflections, saveConfessionList, deleteSession, saveExamToHistory } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { RootStackParamList } from '../../navigation/AppNavigator';
 import { useAppTheme } from '../../theme';

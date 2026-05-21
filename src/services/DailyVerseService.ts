@@ -1,4 +1,4 @@
-import { getTotalVerses, getVerseById } from './BibleDatabaseService';
+import { getTotalVerses, getVerseById } from './index';
 
 /**
  * Serviço de Versículo Diário.

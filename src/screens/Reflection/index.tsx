@@ -10,7 +10,7 @@ import { PrimaryButton } from '../../components/PrimaryButton';
 import { SecondaryButton } from '../../components/SecondaryButton';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveReflection, saveSession } from '../../database/db';
+import { saveReflection, saveSession } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 

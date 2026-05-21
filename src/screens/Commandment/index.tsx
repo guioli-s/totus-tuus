@@ -9,7 +9,7 @@ import { SecondaryButton } from '../../components/SecondaryButton';
 import { Divider } from '../../components/Divider';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveSkipped, saveSession, markSinnedInDB } from '../../database/db';
+import { saveSkipped, saveSession, markSinnedInDB } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 

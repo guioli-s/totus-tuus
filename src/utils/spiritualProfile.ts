@@ -1,4 +1,4 @@
-import { ExamHistoryRecord } from '../database/db';
+import { ExamHistoryRecord } from '../database';
 
 export const commandmentThemes: Record<number, string[]> = {
   1: ["fé", "idolatria"],

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "examen",
+    "name": "Examen",
     "slug": "examen",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0D0D0D"
     },
     "ios": {
       "supportsTablet": true
@@ -18,13 +18,21 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0D0D0D"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "Examen - Exame de Consciência",
+      "shortName": "Examen",
+      "description": "Exame de Consciência, Catecismo, Compêndio e Estudos Bíblicos da Igreja Católica.",
+      "themeColor": "#0D0D0D",
+      "backgroundColor": "#0D0D0D",
+      "lang": "pt-BR"
     },
     "plugins": [
       "expo-sqlite"
