@@ -10,7 +10,7 @@ import { Divider } from '../../components/Divider';
 import { BackButton } from '../../components/BackButton';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveSkipped, saveSession, markSinnedInDB } from '../../database';
+import { saveSkipped, saveSession, markSinnedInDB, deleteSession } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 
@@ -22,6 +22,7 @@ export function CommandmentScreen({ route, navigation }: Props) {
   const total = commandments.length;
 
   const skipCommandment = useExamenStore((s) => s.skipCommandment);
+  const endSession = useExamenStore((s) => s.endSession);
   const markSinned = useExamenStore((s) => s.markSinned);
   const setSessionCommandment = useExamenStore((s) => s.setSessionCommandment);
 
@@ -62,10 +63,16 @@ export function CommandmentScreen({ route, navigation }: Props) {
 
   if (!commandment) return null;
 
+  const handleCancelExam = async () => {
+    endSession();
+    try { await deleteSession(); } catch (e) { console.error(e); }
+    navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] });
+  };
+
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
       <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
-        <BackButton onPress={() => navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] })} />
+        <BackButton onPress={handleCancelExam} />
       </View>
       <ScrollView
         style={styles.scroll}

@@ -11,7 +11,7 @@ import { SecondaryButton } from '../../components/SecondaryButton';
 import { BackButton } from '../../components/BackButton';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveReflection, saveSession } from '../../database';
+import { deleteSession, saveReflection, saveSession } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 
@@ -25,6 +25,7 @@ export function ReflectionScreen({ route, navigation }: Props) {
   const storedEntry = useExamenStore((s) => s.reflections[commandmentId]);
   const setReflection = useExamenStore((s) => s.setReflection);
   const setSessionCommandment = useExamenStore((s) => s.setSessionCommandment);
+  const endSession = useExamenStore((s) => s.endSession);
 
   const { colors, spacing, typography } = useAppTheme();
   const styles = useMemo(() => getStyles(colors, spacing, typography), [colors, spacing, typography]);
@@ -60,10 +61,16 @@ export function ReflectionScreen({ route, navigation }: Props) {
 
   if (!commandment) return null;
 
+  const handleCancelExam = async () => {
+    endSession();
+    try { await deleteSession(); } catch (e) { console.error(e); }
+    navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] });
+  };
+
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
       <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
-        <BackButton onPress={() => navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] })} />
+        <BackButton onPress={handleCancelExam} />
       </View>
       <KeyboardAvoidingView
         style={styles.flex}
