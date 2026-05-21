@@ -33,7 +33,7 @@ interface SettingsState {
 }
 
 export const useSettingsStore = create<SettingsState>((set, get) => ({
-  theme: 'dark', // default
+  theme: 'light', // default
   textScale: 'medium', // default
   lastBibleBook: 0,
   lastBibleChapter: 0,

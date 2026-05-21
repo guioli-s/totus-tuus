@@ -65,7 +65,7 @@ export function CommandmentScreen({ route, navigation }: Props) {
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
       <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
-        <BackButton onPress={() => navigation.navigate('ReflexaoHub')} />
+        <BackButton onPress={() => navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] })} />
       </View>
       <ScrollView
         style={styles.scroll}
