@@ -7,7 +7,6 @@ import { ConfessionScreen } from '../screens/Confession';
 import { SettingsScreen } from '../screens/Settings';
 import { BibleScreen } from '../screens/Bible';
 import { EstudosScreen } from '../screens/Studies';
-import { BibleStudyScreen } from '../screens/BibleStudy';
 import { BookChaptersScreen } from '../screens/Book/ChapterList';
 import { BookReaderScreen } from '../screens/Book/Reader';
 import { ReflexaoNavigator, ReflexaoStackParamList } from './ReflexaoNavigator';
@@ -21,7 +20,6 @@ export type RootStackParamList = {
   Settings: undefined;
   Biblia: undefined;
   Estudos: undefined;
-  EstudoBiblico: undefined;
   Tratado: undefined;
   BookChapters: { bookId: 'catecismo' | 'compendium' | 'tratado' };
   BookReader: { bookId: 'catecismo' | 'compendium' | 'tratado', index: number };
@@ -49,7 +47,6 @@ export function AppNavigator() {
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Biblia" component={BibleScreen} />
         <Stack.Screen name="Estudos" component={EstudosScreen} />
-        <Stack.Screen name="EstudoBiblico" component={BibleStudyScreen} />
         <Stack.Screen name="BookChapters" component={BookChaptersScreen} />
         <Stack.Screen name="BookReader" component={BookReaderScreen} />
       </Stack.Navigator>

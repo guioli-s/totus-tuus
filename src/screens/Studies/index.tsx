@@ -16,13 +16,6 @@ export function EstudosScreen() {
 
   const options = [
     {
-      id: 'bible-study',
-      title: 'Estudo Bíblico com IA',
-      description: 'Gere estudos bíblicos estruturados usando o Bible Scholar e a Bíblia Católica.',
-      icon: 'cpu',
-      color: '#7E57C2',
-    },
-    {
       id: 'catecismo',
       title: 'Catecismo da Igreja Católica',
       description: 'A exposição completa e íntegra da doutrina católica.',
@@ -58,11 +51,7 @@ export function EstudosScreen() {
             style={styles.card}
             activeOpacity={0.8}
             onPress={() => {
-              if (opt.id === 'bible-study') {
-                navigation.navigate('EstudoBiblico');
-              } else {
-                navigation.navigate('BookChapters', { bookId: opt.id as any });
-              }
+              navigation.navigate('BookChapters', { bookId: opt.id as any });
             }}
           >
             <View style={[styles.iconContainer, { backgroundColor: opt.color + '20' }]}>

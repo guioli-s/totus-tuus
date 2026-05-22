@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Title } from '../../components/Title';
@@ -7,10 +7,10 @@ import { Paragraph } from '../../components/Paragraph';
 import { PrimaryButton } from '../../components/PrimaryButton';
 import { SecondaryButton } from '../../components/SecondaryButton';
 import { Divider } from '../../components/Divider';
-import { BackButton } from '../../components/BackButton';
+import { Feather } from '@expo/vector-icons';
 import { commandments } from '../../content/commandments';
 import { useExamenStore } from '../../store/useExamenStore';
-import { saveSkipped, saveSession, markSinnedInDB, deleteSession } from '../../database';
+import { saveSkipped, saveSession, markSinnedInDB } from '../../database';
 import { ReflexaoStackParamList } from '../../navigation/ReflexaoNavigator';
 import { useAppTheme } from '../../theme';
 
@@ -63,16 +63,18 @@ export function CommandmentScreen({ route, navigation }: Props) {
 
   if (!commandment) return null;
 
-  const handleCancelExam = async () => {
-    endSession();
-    try { await deleteSession(); } catch (e) { console.error(e); }
-    navigation.reset({ index: 0, routes: [{ name: 'ReflexaoHub' }] });
+  const handleSaveAndExit = () => {
+    // A sessão permanece ativa na store e no DB, o que efetivamente "salva" o progresso.
+    // Navegamos para a aba Home principal.
+    (navigation as any).navigate('Home');
   };
 
   return (
     <SafeAreaView edges={['top']} style={styles.safe}>
-      <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm }}>
-        <BackButton onPress={handleCancelExam} />
+      <View style={{ paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.sm, alignItems: 'flex-end' }}>
+        <TouchableOpacity onPress={handleSaveAndExit} hitSlop={{ top: 15, bottom: 15, left: 15, right: 15 }}>
+          <Feather name="x" size={26} color={colors.primaryText} />
+        </TouchableOpacity>
       </View>
       <ScrollView
         style={styles.scroll}
